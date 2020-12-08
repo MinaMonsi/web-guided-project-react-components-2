@@ -26,12 +26,13 @@ export default function App() {
       friends.map((friend) => {
         // for each friend, if the friend has the given id
         // otherwise, return friend unchanged
-        if (friend.id === id) {
-          // return a copy of the friend object which has the toggled civil status
-          return { ...friend, married: !friend.married };
-        } else {
-          re
-        }
+        // if (friend.id === id) {
+        //   // return a copy of the friend object which has the toggled civil status
+        //   return { ...friend, married: !friend.married };
+        // } else {
+        //   return friend;
+        // }
+        
       })
     );
   };
