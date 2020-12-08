@@ -11,7 +11,7 @@ export default function Friend(props) {
       {/* 👉 2- Fix the JSX so it displays real info coming into the component */}
       <div className="friend-info">
         <div>
-          <h3>Name: Jessica</h3>
+          <h3>Name:  {person.name}</h3>
           <p>Age: 26</p>
 
           <p>
