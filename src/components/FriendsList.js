@@ -1,5 +1,6 @@
 import React from "react";
 // 👉 1- FriendsList renders several Friend components, import Friend
+import Friend from './Friend'
 
 export default function FriendsList(props) {
   // 👉 2- What data does FriendsList need to do its job? Use destructuring
