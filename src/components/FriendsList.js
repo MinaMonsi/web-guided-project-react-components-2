@@ -11,7 +11,7 @@ export default function FriendsList(props) {
       {/* 👉 3- We need to loop over the data rendering a Friend as we go */}
       {/* Each friend is going to need a `key` prop and also some other prop with data */}
       {friends.map((friendObj) => {
-        return <div>{friendObj.married}</div>;
+        return <Friend />;
       })}
     </div>
   );
