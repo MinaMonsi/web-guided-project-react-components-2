@@ -17,7 +17,7 @@ export default function App() {
 
   // 👉 4- Initialize a slice to keep track of the value of the search box
   // using an empty string as the initial value of the slice
-  const [searches, setsearches] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
   // 👉 5- Build a `changeStatus` function that takes an id and
   // changes the `married` from true to false and viceversa
 
