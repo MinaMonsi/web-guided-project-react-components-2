@@ -1,19 +1,24 @@
-import React from 'react'
-import PetsList from './PetsList'
+import React from "react";
+import PetsList from "./PetsList";
 
 export default function Friend(props) {
   // 👉 1- What does a Friend need?
 
+  const { friend, changeStatus } = props;
+
   return (
-    <div className='friend-friends container'>
+    <div className="friend-friends container">
       {/* 👉 2- Fix the JSX so it displays real info coming into the component */}
-      <div className='friend-info'>
-        <div >
+      <div className="friend-info">
+        <div>
           <h3>Name: Jessica</h3>
           <p>Age: 26</p>
 
-          <p>Married: yes <button>change</button></p>
-          <div>Likes:
+          <p>
+            Married: yes <button>change</button>
+          </p>
+          <div>
+            Likes:
             <ul>
               {/* 👉 3- Loop over the friend's hobbies and generate <li/> elements as you go */}
             </ul>
@@ -28,5 +33,5 @@ export default function Friend(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }
