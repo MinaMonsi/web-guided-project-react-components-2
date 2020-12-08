@@ -15,7 +15,7 @@ export default function Friend(props) {
           <p>Age: {friend.age}</p>
 
           <p>
-            Married: yes <button>change</button>
+            Married: {friend.married ? "Yes" : "No"} <button>change</button>
           </p>
           <div>
             Likes:
