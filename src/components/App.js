@@ -32,7 +32,9 @@ export default function App() {
         // } else {
         //   return friend;
         // }
-        
+        return friend.id === id
+          ? { ...friend, married: !friend.married }
+          : friend;
       })
     );
   };
