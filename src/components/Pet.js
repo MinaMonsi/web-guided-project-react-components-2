@@ -1,11 +1,9 @@
 import React from 'react'
 
-export default function Pet(props) {
-  const { pet } = props
+export default function Pet() {
 
   return (
     <div className='pet-friends container'>
-      <p>{pet.name} ({pet.type})</p>
     </div>
   )
 }
