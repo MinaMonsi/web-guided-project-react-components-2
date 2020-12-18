@@ -5,13 +5,13 @@ import Friend from './Friend';
 export default function FriendsList(props) {
   // console.log(props);
   // console.log(props.friends);
-  const { friends } = props;
+  const { friends, changeStatus } = props;
 
   return (
     <div className="list-friends container">
       {
         friends.map(friend => {
-          return <Friend key={friend.id} friend={friend} />
+          return <Friend key={friend.id} friend={friend} changeStatus={changeStatus} />
         })
       }
     </div>

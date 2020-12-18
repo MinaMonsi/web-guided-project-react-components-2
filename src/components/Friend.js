@@ -3,7 +3,7 @@ import PetsList from './PetsList';
 
 export default function Friend(props) {
   // console.log(props);
-  const { friend } = props;
+  const { friend, changeStatus } = props;
 
   return (
     <div className="friend-friends container">
@@ -14,7 +14,7 @@ export default function Friend(props) {
           {/* age */}
           <p>Age: {friend.age}</p>
           {/* marriage status */}
-          <p>Married: {friend.married ? 'Yes' : 'No'}</p>
+          <p>Married: {friend.married ? 'Yes' : 'No'} <button onClick={() => changeStatus(friend.id)}>change status</button></p>
           <div>
             {/* hobbies */}
             {/* use the map technique like we did for FriendsList */}
